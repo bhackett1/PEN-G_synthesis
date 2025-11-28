@@ -1,0 +1,387 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{jinstpub} % for details on the use of the package, please see the JINST-author-manual
+\usepackage{lineno}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\linenumbers
+
+% Proceedings/Special Issues
+% Please note that this macro will be edited in production 
+%% \proceeding{N$^{\text{th}}$ Workshop on X\\
+%% When\\
+%% Where}
+
+
+
+\title{\boldmath Synthesis and Characterization of Glycol-modified poly(ethylene naphthalate) for Scintillator Applications }
+
+% Collaborations
+
+%% [A] If main author
+%% \collaboration{\includegraphics[height=17mm]{collabroation-logo}\\[6pt]
+%%  XXX collaboration}
+
+%% or
+%% [B] If "on behalf of"
+%% \collaboration[c]{on behalf of XXX collaboration}
+
+
+% Authors
+% Please note that in JINST a corresponding author is required alongside with their e-mail addres
+% The "\note" macro will give a warning: "Ignoring empty anchor...", you can safely ignore it.
+
+%% [A] simple case: 2 authors, same institution
+%% \author[1]{A. Uthor\note{Corresponding author.}}
+%% \author{and A. Nother Author}
+%% \affiliation{Institution,\\Address, Country}
+
+%% or, e.g.
+%% [B] more complex case: 4 authors, 3 institutions, 2 footnotes
+%% \author[a,b,1]{F. Irst,\note{Corresponding author.}}
+%% \author[c]{S. Econd,}
+%% \author[a,2]{T. Hird\note{Also at Some University.}}
+%% \author[c,2]{and Fourth}
+%% \affiliation[a]{Institution_1,\\Address, Country}
+%% \affiliation[b]{Institution_2,\\Address, Country}
+%% \affiliation[c]{Institution_3,\\Address, Country}
+
+\author{B. Hackett}
+\affiliation{Max Planck Institute for Physics,\\
+some-street, Country}
+\affiliation{Another University,\\
+different-address, Country}
+
+% E-mail addresses: only for the corresponding author
+\emailAdd{hackett@mpp.mpg.de}
+
+\abstract{Poly(ethylene-2,6-naphthalate) (PEN) is a polymer of interest for rare-event searches due to its robust structural properties and intrinsic blue scintillation (\SIrange{400}{500}{\nano\meter}). For these applications, a sophisticated synthesis method is required to meet stringent optical and structural standards.
+
+A synthesis procedure was developed to optimize optical properties while maintaining structural integrity. Optical properties were improved by eliminating colorants and carefully selecting radio-pure catalysts, such as germanium oxide.
+
+The glycol-modified PEN, PEN-G, was successfully synthesized in two \SI{\sim 3}{\kilo\gram} batches. After injection molding, the scintillation light yield and wavelength shifting efficiency under vacuum ultraviolet (VUV) excitation were measured. An increase of XXX and XXX, respectively, was measured relative to commercial PEN. The yield strength of the molded PEN-G samples was found to be comparable to that of commercial PEN.}
+
+
+% \abstract{Poly(ethylene-2,6-naphthalate) (PEN) is of interest for a wide range of research, e.g. rare-event searches like LEGEND, DarkSide-20k, Cuore, or Kamland-Zen2 for its robust structural properties as well as its intrinsic fluorescence and scintillation with emission in the visible blue region (\SIrange{400}{500}{\nano\meter}). The synthesis of PEN for detector applications requires a sophisticated method to meet stringent optical and structural requirements. 
+% We developed a synthesis procedure that optimizes optical properties while still maintaining the structural integrity of the polyester.
+% Optical properties were improved by eliminating colorants and carefully selecting catalysts.
+% Cleanliness in terms of radio-impurities was taken into account by identifying catalysts that are inherently radio-pure, such as germanium oxide.
+% The glycol-modified PEN, poly(ethylene glycol-co-1,4-cyclohexanedimethanol-naphthalate) or short PEN-G, was successfully synthesized in two batches of \SI{\sim 3}{\kilo\gram} each. After injection molding the material, the scintillation light yield and wavelength shifting efficiency of vacuum ultraviolet (VUV) excitation were measured. An increase of XXX and XXX respectively was measured relative to commercial PEN. The structural properties of the molded samples was compared to those of molded PEN made from commercial granulate. The yield strength of PEN-G is comparable to the one of ...}
+
+\keywords{Only keywords from JINST's keywords list please}
+
+\arxivnumber{1234.56789} % Only if you have one
+
+
+
+
+
+\begin{document}
+\maketitle
+\flushbottom
+
+\section{Introduction}
+\label{sec:intro}
+
+Poly(ethylene-2,6-naphthalate) (PEN) is a commercially available polyester that has made a significant impact in radiation detection. Its inherent scintillation and fluorescence properties and its commercial availability make it ideal for supporting scintillating detectors in rare-event searches like DarkSide-20k, LEGEND, Cuore, and Kamland-Zen2. PEN is particularly valuable in cryogenic experiments, where it shifts vacuum ultraviolet (VUV) scintillation light from noble gases, such as argon ($\sim \SI{128}{\nano\meter}$) or xenon ($\sim \SI{175}{\nano\meter}$), to the blue region ($\sim \SIrange{400}{500}{\nano\meter}$) to match the peak detection efficiency of most photodetectors.
+
+For example in the neutrino-less double-beta decay experiment LEGEND (searching with $^{76}$ Ge), PEN serves a unique dual role as both a structural and an optically active material. High-purity germanium (HPGe) detectors, with masses up to \SI{3.5}{\kilo\gram}, are deployed in liquid argon on PEN holders. Using an optically active material for these holders improves the efficiency of the liquid argon anti-coincidence detector in the vicinity of the HPGe detectors by eliminating optically inactive components.
+
+% Poly(ethylene-2,6-naphthalate) (PEN) is a commercially available polyester that has had a significant impact in radiation detection for its inherent scintillating and fluorescence properties in combination with its availability on the market. The polyester has been used in a large number of experiments, mostly focusing on supporting light detection in rare event search experiments, such as Darkside-20k, LEGEND, Cuore or Kamland-Zen2. In particular, PEN is used in cryogenic experiments to shift the ultraviolet vacuum scintillation light produced by noble gases, such as argon (peaking at \SI{\sim 128}{\nano\meter}) or xenon (\SI{\sim 175}{\nano\meter}), to the visible blue region at the peak detection efficiency of most photodetectors.
+% In the LEGEND experiment for neutrino-less double-beta decay of $^{76}$Ge, PEN is uniquely used as both a structural and an optically active material. High-purity germanium (HPGe) detectors with masses up to \SI{3.5}{\kilo\gram} are deployed in strings bare in liquid argon. Each detector and its readout electronics are supported by a PEN-based holder. Through the elimination of optically inactive holders, the efficiency of the liquid argon anti-coincidence detector is improved in the vicinity of the HPGe detectors.\par
+
+Current applications of PEN are limited by the properties of commercially available products. Whether custom injection-molded for LEGEND-200 or purchased as pre-extruded thin films for DarkSide-20k, the final product's optical characteristics and radiopurity are determined by the source granulate. Commercial PEN (PEN-C) granulate, like TN-8065 SC from Teijin-DuPont, often contains cobalt as a colorant, which decreases the material's attenuation length and quantum efficiency. Furthermore, PEN-C's semi-crystalline form leads to crystallization centers within the bulk when subjected to slow cooling. This crystallization scatters light, impairing light transport.
+
+% The present application of PEN in experiments is limited dominantly by the accessibility of commercial products. For example, PEN is either custom injection molded and machined into components, as seen in LEGEND-200 \cite{PENinL200}, or commercially purchased in the form of pre-extruded thin films, such as in DarkSide-20k \cite{PENinDS}. In both instances, the optical characteristics and radiopurity of the final product are determined by the granulate used in the manufacturing process.\par
+% Commercial PEN (PEN-C) granulate like TN-8065 SC from Teijin-DuPont \cite{PEN_Teijin} typically includes cobalt as a colorant to enhance its appearance. However, the addition of this blue pigment decreases both the attenuation length and the quantum efficiency of the material's scintillation process. Moreover, PEN-C granulate exists in a semi-crystalline form, resulting in crystallization centers forming within the bulk when subjected to slow cooling after injection molding or extrusion. This crystallization causes light scattering, impairing light transport through the bulk of the material.\par
+
+To overcome these issues, a glycol modification using (cyclohexane-1,4-diyl)dimethanol can be applied to PEN, similar to what has been done for poly(ethylene terephthalate) (PET). This process yields glycol-modified PEN (PEN-G). PEN-G offers several advantages, including increased elasticity, a lower melting point, and decreased viscosity. These properties allow for synthesis and molding at reduced temperatures, which in turn reduces the risk of oxidation damage to the naphthalene rings and preserves the material's color, attenuation length, and scintillation properties. However, a potential trade-off is the material's structural integrity, which is necessary for some applications. Therefore, the extent of glycol modification must be carefully balanced to ensure adequate structural properties and maximizing the mass percentage of the optically active naphthalene rings.
+
+% With the comparable polyester poly(ethylene terephthalate) (PET), a modification to synthesize by incorporating (cyclohexane-1,4-diyl)dimethanol has been investigated to prevent crystallization and lower synthesis temperatures. A similar glycol modification can also be applied to the synthesis of PEN, leading to the formation of poly(ethylene glycol-co-1,4-cyclohexanedimethanol naphthalate) or short PEN-G.\par
+
+The choice of catalysts also significantly impacts the optical properties of the material. Many Lewis acids, used for the initial transesterification step, can cause yellowing. Milder Lewis acids can minimize this while still ensuring a complete transesterfication. For the second phase of polycondensation, industry-standard catalysts such as tin oxide or antimony can cause gray discoloration. Germanium oxide has emerged as a promising alternative, not only for its improved coloration but also for its exceptionally high purity, which is crucial for low-background experiments.
+
+% In addition, the choice of catalysts impacts the optical properties of the material. Many Lewis acids, which are essential for the initial step of synthesis known as transesterification, often result in yellowing of the material. Opting for a milder Lewis acid can minimize this yellowing during the second synthesis phase while ensuring the polymerization is fully completed. During the second phase, polycondensation, catalysts such as tin oxide or antimony are typically used in industry. Although these catalysts are cost-effective and efficient, they can lead to gray discoloration in the material, detracting from its optical qualities~\cite{}. Germanium oxide has been identified as a promising alternative, offering not only improved coloration but also exceptionally high purity, crucial for potential applications in low-background settings such as rare-event searches like LEGEND.\par
+
+In this publication, we present a synthesis method for PEN-G and compare its properties, particularly its optical characteristics, with those of commercially available PEN.\par
+
+
+\section{Synthesis Method}
+The goal of this synthesis is to produce kilogram-scale batches of PEN-G with enhanced optical properties, structural integrity, and uniformity for use in rare-event search experiments like LEGEND.
+
+While successful synthesis of PEN has been achieved on small scales, transitioning to larger batches is critical for injection molding, which requires several kilograms of material for high-quality component output. The procedure was developed to produce parts with superior optical quality by minimizing oxygen exposure and lowering temperatures during both synthesis and molding. Furthermore, unnecessary reagents and additives were eliminated from the process to improve the optical properties and overall purity of the final product.
+
+% Though successful synthesis of PEN has been achieved on small scales \cite{BrennanThesis}, transitioning to larger batch production is critical for injection molding, which typically demands several kilograms for high-quality component output. 
+% Moreover, we strive to produce parts with superior optical quality by minimizing oxygen exposure and lowering temperatures during synthesis and molding whenever feasible. 
+% Furthermore, we are eliminating unnecessary reagents and additives from the process to improve optical properties and overall purity of the final product.\par
+
+\subsection{Glycol Modification with Cyclohexane Dimethanol}
+The incorporation of cyclohexane dimethanol (CHDM) is a common glycol modification used to prevent crystallization in polymers like PET. In glycol-modified PEN (PEN-G), this modification offers additional benefits, including increased elasticity, a lower melting point, and decreased viscosity. Consequently, the synthesis and molding of PEN-G can be performed at reduced temperatures, reducing the risk of oxidation damage to the naphthalene rings. This in turn helps preserve the material's color, attenuation length, and its scintillation and photoluminescence characteristics.
+
+A potential concern is the structural integrity of PEN-G, which is essential for certain applications. For this reason, the extent of glycol modification is optimized. A higher CHDM content also results in a decreased mass percentage of the optically active naphthalene rings, creating a conflict between optical performance, structural requirements and increased glycol modification that must be managed during synthesis.
+
+% The incorporation of cyclohexane dimethanol (CHDM) for glycol modification is commonly done to prevent crystallization in polymers such as PET~\cite{}. In contrast, glycol-modified PEN, or PEN-G, offers enhanced properties like increased elasticity, a lower melting point, and decreased viscosity. Consequently, the synthesis and molding of PEN-G can occur at reduced temperatures, which reduces the risk of oxidation damage to the naphthalene rings \cite{}. This ensures the preservation of the material's color, attenuation length, as well as its scintillation and photoluminescence characteristics. However, there is a potential concern regarding the structural integrity of PEN-G, which is necessary for some applications. For this reason, the extent of glycol modification is kept conservative. In addition, a higher CHDM content in PEN-G results in a decreased mass percentage of the optically active naphthalene rings. These conflicting aspects must be carefully balanced during the synthesis.\par
+
+\subsection{Catalyst Selection}
+
+Catalysts for transesterication and polycondensation typically contain non-hydrocarbon elements which may pose radiopurity concerns for rare event physics experiments.  Commonly used catalysts for transesterifcation include metal acetates such as manganese acetate or zinc acetate.  Neutron reactions of either can result in radioactive byproducts with half-lives of > 100 days.  Thus magnesium acetate was chosen for this work since all neutron activation pathways result in activations product half-lives < 1 day.  Same condition also applies to the polycondication cataylsis. Antimony trioxide is the most commonly used polycondenstation cataylst for PEN but neutron activation of antimony isotopes results in long lived radioactive byproducts.  Since germanium (IV) oxide in germanium-based neutrinoless double beta decay experiments, germanium made a natural choice as a polycondenstaion catalysts.  To add in dissolution into the viscous melt, a liquid solution of germanium (IV) oxide was dissolved in ethylene glycol was used.  
+
+
+\subsection{Reagents}
+
+Dimethyl-naphtalene-2,6-dicarboxylate (DMN) was purchased from Thermo Fisher (Kandel) GmbH, Germany with $\geq$~$99\%$ purity given by the supplier. 
+Monoethylene glycole (MEG) and 1,4-cyclohexanedimethanole (CHDM) cis/trans mixture (99$\%$ purity given by the supplier) were supplied by Alfa Aesar. 
+Magnesiumacetate Tetrahydrate (99$\%$ purity given by the supplier) and Germanium oxide 99.999$\%$ were purchased from Sigma Aldrich.
+
+\subsection{Instruments}
+Small-scale transesterification and melt polycondensation trials (200 g scale) were conducted in a 1000 mL three-necked glass flask equipped with a mechanical stirrer, distilling link, distillation receiver for collecting condensates, nitrogen inlet, and a vacuum system.
+The progress of transesterification and polycondensation was monitored by the inside temperature, distillation top temperatures, torque and volume amount of collected distillate.
+
+For kilogram-scale production, a 10 L Juchheim autoclave was used. This system included an anchor agitator, a dephlegmator, and a heat exchange system for condensate collection. Torque, pressure, inside temperature, and agitation speed were recorded.
+% For scale up into the Kg scale a 10 L Juchheim autoclave equipped with an anchor agitator, a dephlegmator and a heat exchange system for condensation of distillates was used. 
+% Torque, pressure, inside temperatures agitation speed an torque were recorded. 
+
+The polycondensation products were characterized using a NETZSCH DSC 214 Polyma for differential scanning calorimetry (DSC). 
+Two heating traces and one cooling trace were recorded at a heating rate of \SI{10}{\kelvin\per\minute} within the temperature range of \SIrange{25}{300}{\celsius}. 
+Glass transition ($T_g$), recrystallization ($T_{recryst}$), and melting temperatures ($T_m$) were recorded. 
+Intrinsic viscosities were measured in an o-dichlorobenzene/phenol mixture using an automatic UBBELOHDE viscometer. 
+Carboxylic end groups (COOH) were determined by titration in an o-cresol solution. 
+Finally, injection-molded PEN specimens were characterized by wide-angle X-ray scattering (WAXS) using a BRUKER D8 Advanced Instrument.\textbf{}
+
+% The polycondensation products were characterized by difference scanning calorimetry (DSC) using a NETZSCH DSC 214 Polyma. 
+% Two heating traces and one cooling trace were recorded with a heating rate of 10 $Kmin^{-1}$ in temperature range of $25-300^{\circ}$C. 
+% Glassy temperatures (T$_g$), recrystallization Temperatures (T$_{recryst}$) and melting temperatures (T$_m$) were recorded. 
+% Intrinsic viscosities were measured in a o-dichlorobenzene/phenole mixture by using an automatic UBBELOHDE viscosimeter set up. 
+% Carboxylic endgoups (COOH) were determined by titration in an o-cresole solution. 
+% Mould injected PEN-specimen were characterized by XRD WAXS by means of a BRUKER D8 Advanced Instrument.
+
+\subsection{Synthesis Procedure}
+
+In autoclave runs MP-V1001 and MP-V1002, the raw materials DMN, MEG, and CHDM were used as received. 
+% To improve color and radio-purity, DMN was purified by recrystallization from dimethylformamide and titration with hot toluene in trial MP-V1003. 
+% MEG and CHDM were purified by vacuum distillation and stored under nitrogen prior to use.
+
+% Prior to the autoclave trials small scale studies in the glassy apparatus in 200 g scale were performed. In the autoclave runs MP-V1001 and MP-V1002, the raw materials DMN, MEG and CHDM were used as received with no further purification. In ordert o improve colour and radio puritiy DMN was purified by recrystallization from dimethylformamide and tituration with hot toluene trial MP-V1003. MEG and CHDM were purified by vacuum distillation and stored under nitrogen prior to use. 
+
+2080 g (8.52 mol) of DMN was dissolved in a mixture of 807 g (13.00 mol) of MEG and 580 g (4.02 mol) of CHDM under nitrogen in the autoclave at 100-120°C. After, 5.27 g of magnesium acetate tetrahydrate transesterification catalyst, dissolved in 191 g of MEG, was added. 
+A 20 mol$\%$ CHDM content was present in the mixture with respect to the sum of MEG and CHDM. 
+A total molar ratio of hydroxyl groups to methyl ester groups in DMN of 2.36 was applied. 
+
+After addition and homogenization of all components, the temperature of the autoclave was ramped to an internal temperature of 180°C.
+The dephlegmator was kept at 70°C to remove evolving methanol from the mixture. 
+The transesterification was then carried out over 185 min by increasing the inside temperature from 180°C to 220°C.
+The progress of the reaction was monitored by the amount of distilled methanol. 
+The transesterfication was deactivating catalyst with ** g of phosphoric acid dissolved in MEG. 
+Additionally, the polycondensation catalyst,  ** g of germanium oxide dissolved in ** g of MEG, was added to the autoclave. 
+The prepolycondensation phase followed, with excess MEG and methanol being distilled off under a vacuum ramp from atmospheric pressure to 6 mbar. 
+The final polycondensation phase was carried out over 70 min at 280°C and 0.2 mbar until a torque of 20 Nm was reached at an agitator speed of 10 rpm.
+
+\subsubsection*{Transesterification}
+
+The transesterification reaction rate is indicated by the amount of evolved methanol. 
+To minimize deviations from evaporated MEG, the density of the condensed liquid was checked. 
+The distillation temperature measured at the top of the dephlegmator column was constantly at 65°C, confirming the removal of methanol. 
+To increase the extent of the reaction, the inside temperature was increased stepwise, according to a non-isothermic process. 
+This effect is similar to the well-known transesterification procedure in the dimethyl terephthalate (DMT) process for polyester production. 
+Figure \ref{fig:transtemp} shows the temperature profile over time during the transesterification, and Figure \ref{fig:pA_time} shows the extent of the reaction of methyl ester groups with alcoholic groups from CHDM and MEG.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/V1002_tempvstime.png}
+    \caption{Rising reactor inside temperature over the transesterification phase, conducted as non-isothermic process. Methanol generation started at 170$^{\circ}$C.}
+    \label{fig:transtemp}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/V1002_pAvstime.png}
+    \caption{Extend of reaction pA during the transesterification of DMN with a mixture of MEG and CHDM. pA gives the conversion of methyl ester groups of DMN with hydroxylic groups of CHDM and MEG, respectively. With the transesterification time pA approximates 0.95 .}
+    \label{fig:pA_time}
+\end{figure}
+
+
+The extent of reaction, $p_A$, was calculated according to the following equation:
+$$p_A = \frac{n_A^0 - n_A}{n_A^0}$$
+Here, $n_A^0$ refers to the initial amount of DMN methyl ester groups at $t=0$, and $n_A$ denotes the amount of methyl ester groups after a given transesterification time $t$. 
+The extent of reaction in the transesterification process should have a minimum value of 0.95 to achieve higher molecular weights in the polycondensation products. 
+Figure \ref{fig:torque_poly} shows the torque profile in the prepolycondensation (``prepoly'') and the polycondensation phase (``poly'').
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/torquevspolytime.png}
+    \caption{Climbing torque in the step growth reaction of run PEN MP V1002 in dependence of the polycondensation time. The prepolycondensation (prepoly) was carried ot in a temperature range from 237°C to 266°C by applying a vacuum ramp from atmospheric pressure to 6 mbar (a). During polycondensation (poly) the pressure was reduced to p < 0.2 mbar (a) and the temperature was increased to 280°C.}
+    \label{fig:torque_poly}
+\end{figure}
+
+\subsubsection*{Polycondensation }
+During the prepoly phase the temperature was increased from 237°C to 266°C and the pressure was reduced from atmospheric pressure to 6 mbar. 
+This allowed for the complete the transesterification and distilling off excess MEG. 
+Standard polyester polycondensation conditions were followed by reducing the pressure to p > 0,2 mbar and raising the temperature to 280°C, 45 minutes after the prepoly phase. 
+The torque rate began significantly increasing after the internal temperature exceeded 270 deg, approximately 80 min into the polycondensation.
+This is inline with other recommended methods for polycondensation reactors for polyester plastics. 
+It should be noted that the recorded torque relates to the melt viscosity at a given temperature and therefore correlates with the average molecular weight and the degree of polymerization.
+Additionally, as the melt viscosity climbed, the agitator speed had to be reduced to avoid damage to the sensor.
+
+\subsection{Injection Molding}
+
+The synthesized PEN-G granulate was injection molded into test samples for material characterization. 
+To ensure optimal optical quality, no releasing agent was used during the molding process. 
+This decision was made to prevent any contamination that could interfere with the material's optical properties or purity. 
+The material was molded under carefully controlled temperature and pressure settings to maintain its structural integrity and amorphous state, as determined by subsequent material analysis.
+
+
+\section{Characterization of Polymer and Reagents}
+The success and extent of transesterification and polymerization were investigated using analytical methods to characterize the polymer's end groups and chemical content. 
+These analyses helped to understand the reaction methods' effectiveness and identify potential sources of yellowing or other side reactions.
+The scintillator performance of the synthesized PEN-G was then compared to PEN-C, which was previously used in low-background experiments, and the commercial scintillator EJ-200.
+
+\subsection{Properties of the polymer}
+
+Table \ref{tab:endgroup} summarizes the results of the IV measurements, end-group determination, and thermal characterization by DSC.
+Injection molded specimens of PEN MP V1002 were investigated by WAXS X-Ray diffractometry according to DIN EN 13925-1-3. 
+The measurements excluded the existence of any ordered patterns. 
+Due to the absence of crystalline phases, no melt transition occurred, which indicates an amorphous material. The glassy temperature, Tg, was taken as the inflection point of the glass transition in the second heating with a heating rate of 20 K min$^{-1}$.
+
+\begin{table}[h!]
+    \begin{tabular}{lccccccc}
+        \multicolumn{1}{c}{Run}             & hrel & IV         & COOH          & \textit{Tg} & \textit{Trecryst} & \textit{Tm} & \textit{DHm} \\
+        \multicolumn{1}{c}{\textbf{PEN-MP}} &      & {[}dL/g{]} & {[}mmol/Kg{]} & {[}°C{]}    & {[}°C{]}          & {[}°C{]}    & {[}J/g{]}    \\
+        \textbf{V1001}                      & 1,29 & 0,52       & 19,56         & 117,5       & -                 & -           & -            \\
+        \textbf{V1002}                      & 1,33 & 0,60       & 19,56         & 119,9       & -                 & -           & -            \\
+              
+    \end{tabular}
+    \caption{IV-measurements, endgroup determination and thermal characterization by DSC of trial PEN-MP V1002. The glassy temperature Tg was taken as inflection point of the glass transition in the second heating with a heating rate of 20 K*min-1.}
+    \label{tab:endgroup}
+\end{table}
+
+etc? 
+
+\subsection{Structural Characterization}
+
+The structural integrity of the molded PEN-G samples was evaluated through standard mechanical tests. 
+The samples were subjected to tensile and yield stress tests to determine properties such as yield strength, ultimate tensile strength, and elongation at break. 
+The results were compared to those of commercially available PEN to confirm that the glycol modification did not compromise the polymer's mechanical performance, which is essential for its application as a structural component in detectors.
+The results are shown in Table ************. 
+
+\subsection{Optical Properties and Luminescence}
+PEN exhibits intrinsic luminescence due to the naphthalene rings in its polymer chain. 
+Previous studies show that PEN's photoluminescence is caused by $^1(\pi\pi^{*})$ naphthalene-dicarboxylate (NDC) excimer excitations, which emit in the \SIrange{350}{500}{\nano\meter} range, and much weaker monomer excitations at \SIrange{550}{600}{\nano\meter}.
+For PEN-G, no changes to the emission spectrum or emission timescale are expected, as the optically active units remain the same as in commercial PEN.
+However, the CHDM units lower the number of NDC groups in the polymer. It is hoped that the elimination of additives from commercial PEN will outweigh this and improve the material's transparency and bulk light transport.
+
+\subsubsection*{Attenuation Length}
+
+
+\subsubsection*{Scintillation Properties}
+
+\subsubsection*{Wavelength Shifting Characterization}
+In terms of wavelength-shifting qualities, the most important one for use in liquid noble gas detectors is the efficiency to shift vacuum-ultraviolet (VUV) light to the visible region. In the case of the LEGEND experiment, PEN parts shift the scintillation light of liquid argon, peaking at \SI{128}{\nano\meter}, while at a temperature of approximately \SI{87}{\kelvin}.\par
+Commercial PEN, currently used in LEGEND-200, was previously characterized at liquid argon conditions with a custom-made cryogenic VUV spectrofluorometer setup. The wavelength shifting efficiency (WLSE) of PEN-C increased by at least \SI{37 \pm 4}{\percent} from \SIrange{300}{87}{\kelvin} for excitation with \SI{128}{\nano\meter} light \cite{VUVsetup}. For PEN-G, we compared the WLSE with that of PEN-C at room temperature directly as well as measured its relative increase during cooling.\par
+
+\section{Conclusion}
+
+
+% \section{Figures and tables}
+
+% All figures and tables should be referenced in the text and should be
+% placed on the page where they are first cited or i
+% subsequent pages. Positioning them in the source file
+% after the paragraph where you first reference them usually yield good
+% results. See figure~\ref{fig:i} and table~\ref{tab:i} for layout examples. 
+% Please note that a caption is mandatory and its position differs, i.e.\ bottom for figures and top for tables.
+
+% \begin{figure}[htbp]
+% \centering
+% \includegraphics[width=.4\textwidth]{example-image-a}
+% \qquad
+% \includegraphics[width=.4\textwidth]{example-image-b}
+% \caption{Always give a caption.\label{fig:i}}
+% \end{figure}
+
+% \begin{table}[htbp]
+% \centering
+% \caption{We prefer to have top and bottom borders around the tables.\label{tab:i}}
+% \smallskip
+% \begin{tabular}{lr|c}
+% \hline
+% x&y&x and y\\
+% \hline
+% a & b & a and b\\
+% 1 & 2 & 1 and 2\\
+% $\alpha$ & $\beta$ & $\alpha$ and $\beta$\\
+% \hline
+% \end{tabular}
+% \end{table}
+
+% We discourage the use of inline figures (e.g. \texttt{wrapfigure}), as they may be
+% difficult to position if the page layout changes.
+
+% We suggest not to abbreviate: ``section'', ``appendix'', ``figure''
+% and ``table'', but ``eq.'' and ``ref.'' are welcome. Also, please do
+% not use \texttt{\textbackslash emph} or \texttt{\textbackslash it} for
+% latin abbreviaitons: i.e., et al., e.g., vs., etc.
+
+
+% \paragraph{Up to paragraphs.} We find that having more levels usually
+% reduces the clarity of the article. Also, we strongly discourage the
+% use of non-numbered sections (e.g.~\texttt{\textbackslash
+%   subsubsection*}).  Please also consider the use of
+% ``\texttt{\textbackslash texorpdfstring\{\}\{\}}'' to avoid warnings
+% from the \texttt{hyperref} package when you have math in the section titles.
+
+
+
+\appendix
+\section{Some title}
+Please always give a title also for appendices.
+
+
+
+
+
+\acknowledgments
+
+This is the most common positions for acknowledgments. A macro is
+available to maintain the same layout and spelling of the heading.
+
+\paragraph{Note added.} This is also a good position for notes added
+after the paper has been written.
+
+
+% Bibliography
+
+%% [A] Recommended: using JHEP.bst file
+%% \bibliographystyle{JHEP}
+%% \bibliography{biblio.bib}
+
+%% or
+%% [B] Manual formatting (see below)
+%% (i) We suggest to always provide author, title and journal data or doi:
+%% in short all the informations that clearly identify a document.
+%% (ii) please avoid comments such as "For a review'', "For some examples",
+%% "and references therein" or move them in the text. In general, please leave only references in the bibliography and move all
+%% accessory text in footnotes.
+%% (iii) Also, please have only one work for each \bibitem.
+
+\bibliographystyle{JHEP}
+\bibliography{biblio}
+
+% \begin{thebibliography}{99}
+
+% \bibitem{a}
+% Author,
+% \emph{Title},
+% \emph{J. Abbrev.} {\bf vol} (year) pg.
+
+% \bibitem{b}
+% Author,
+% \emph{Title},
+% arxiv:1234.5678.
+
+% \bibitem{c}
+% Author,
+% \emph{Title},
+% Publisher (year).
+
+% \end{thebibliography}
+\end{document}
+'
